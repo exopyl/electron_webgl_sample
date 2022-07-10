@@ -1,0 +1,16 @@
+{
+  "name": "3D viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^19.0.4",
+    "three": "^0.141.0",
+    "dat.gui": "^0.7.9"
+  }
+}
