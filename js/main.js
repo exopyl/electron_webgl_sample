@@ -21,7 +21,7 @@ const init = () => {
   controls = new THREE.TrackballControls(camera, renderer.domElement);
 
   // axis helper
-  axis = new THREE.AxisHelper(5);
+  axis = new THREE.AxesHelper(5);
   scene.add(axis);
 
   renderer.setClearColor('#00A26D');
