@@ -8,8 +8,7 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({
     icon:'icon.png',
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false
+      nodeIntegration: false
     }
   });
   mainWindow.loadURL(`file://${__dirname}/index.html`);
