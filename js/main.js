@@ -1,30 +1,3 @@
-//import * as THREE from 'three';
-/*
-import {
-  AmbientLight,
-  AnimationMixer,
-  AxesHelper,
-  Box3,
-  Cache,
-  DirectionalLight,
-  GridHelper,
-  HemisphereLight,
-  LinearEncoding,
-  LoaderUtils,
-  LoadingManager,
-  PMREMGenerator,
-  PerspectiveCamera,
-  Scene,
-  SkeletonHelper,
-  Vector3,
-  WebGLRenderer
-} from 'three';
-import { GUI } from 'dat.gui';
-*/
-const THREE = require('three')
-import { TrackballControls } from 'three/examples/js/controls/TrackballControls.js';
-const dat = require('dat.gui')
-
 var scene, camera, renderer, controls, axis, gui;
 
 const init = () => {
@@ -45,7 +18,6 @@ const init = () => {
   gui.add(camera.position, 'z', 0, 800);
 
   // camera controls
-  //controls = new THREE.OrbitControls(camera);
   controls = new THREE.TrackballControls(camera, renderer.domElement);
 
   // axis helper
